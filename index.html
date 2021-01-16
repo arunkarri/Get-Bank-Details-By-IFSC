@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IFSC Search</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta
+      name="description"
+      content="A simple site to get the bank details based on IFSC Code."
+    />
+    <meta name="keywords" content="NSE, NSE India, Share Market, Top 5 gainers, Top 5 Losers, Share Market, Harshad Mehta, Scam 1992" />
+
+    <link rel="icon" type="image/x-icon" href="bank.jpg" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="center-align">
+        <div class="row">
+          <div class="col-12">
+            <form>
+              <div class="row col-12 form-group">
+                <div class="col-8">
+                  <input type="text" class="form-control" id="search" placeholder="Enter an IFSC Code" oninput="btnCheck()" />
+                </div>
+                <div class="col-4 submit-btn">
+                  <button type="submit" class="btn btn-primary mb-3" id="search-btn" disabled="" onclick="searchEvent(event)">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="loader"></div>
+      <b><div id="message"></div></b>
+      <div class="content" id="content">
+        <div class="row">
+          <div class="col-6">Address :</div>
+          <div class="col-6" id="addr"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">BANK :</div>
+          <div class="col-6" id="bank"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">BANKCODE :</div>
+          <div class="col-6" id="bankCode"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">BRANCH :</div>
+          <div class="col-6" id="branch"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">CENTRE :</div>
+          <div class="col-6" id="centre"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">CITY :</div>
+          <div class="col-6" id="city"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">CONTACT :</div>
+          <div class="col-6" id="contact"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">DISTRICT :</div>
+          <div class="col-6" id="district"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">IFSC :</div>
+          <div class="col-6" id="ifsc"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">IMPS :</div>
+          <div class="col-6" id="imps"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">MICR :</div>
+          <div class="col-6" id="micr"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">NEFT :</div>
+          <div class="col-6" id="neft"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">RTGS :</div>
+          <div class="col-6" id="rtgs"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">STATE :</div>
+          <div class="col-6" id="state"></div>
+        </div>
+        <div class="row">
+          <div class="col-6">UPI :</div>
+          <div class="col-6" id="upi"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

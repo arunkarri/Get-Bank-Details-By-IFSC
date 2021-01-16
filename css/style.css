@@ -1,0 +1,29 @@
+.container-fluid {
+  text-align: center;
+}
+.center-align {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.content > * {
+  margin: 10px 0;
+}
+.spinner-border {
+  height: 100px;
+  width: 100px;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.content > * div:nth-child(1) {
+  text-align: end;
+}
+
+.content > * div:nth-child(2) {
+  text-align: start;
+}
